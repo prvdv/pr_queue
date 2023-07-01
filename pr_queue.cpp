@@ -25,3 +25,9 @@ void pr_queue::heapifyDown(int index){
 		heapifyDown(min);
 	}
 }
+bool pr_queue::empty() {
+	return heap.size() == 0;
+}
+int pr_queue::size() {
+	return heap.size();
+}
