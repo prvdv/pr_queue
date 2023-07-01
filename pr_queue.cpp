@@ -31,3 +31,7 @@ bool pr_queue::empty() {
 int pr_queue::size() {
 	return heap.size();
 }
+void pr_queue::push(int value) {
+    heap.push_back(value);
+	heapifyUp(heap.size() - 1);
+}
