@@ -57,3 +57,8 @@ void pr_queue::print() {
 	}
 	std::cout << std::endl;
 }
+pr_queue::pr_queue(){
+}
+pr_queue::pr_queue(const pr_queue& pq){
+    heap = pq.heap;
+}
