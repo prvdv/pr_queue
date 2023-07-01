@@ -49,3 +49,11 @@ int pr_queue::top() {
 	}
 	return heap[0];
 }
+void pr_queue::print() {
+    pr_queue temp = *this;
+	while (!temp.empty()) {
+		std::cout << temp.top() << ' ';
+		temp.pop();
+	}
+	std::cout << std::endl;
+}
