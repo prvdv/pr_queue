@@ -43,3 +43,9 @@ void pr_queue::pop() {
 	heap.pop_back();
 	heapifyDown(0);
 }
+int pr_queue::top() {
+    if (empty()) {
+		return -1;
+	}
+	return heap[0];
+}
