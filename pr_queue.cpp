@@ -35,3 +35,11 @@ void pr_queue::push(int value) {
     heap.push_back(value);
 	heapifyUp(heap.size() - 1);
 }
+void pr_queue::pop() {
+    if (empty()) {
+		return;
+	}
+	heap[0] = heap.back();
+	heap.pop_back();
+	heapifyDown(0);
+}
